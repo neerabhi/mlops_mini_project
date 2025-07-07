@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/user/Desktop/Mlops/mlops_mini_project/mlruns/604577791879988767/3469ef38d5c94ceaaebd92db8d700490/artifacts
+end_time: 1751893536286
+entry_point_name: ''
+experiment_id: '604577791879988767'
+lifecycle_stage: active
+run_id: 3469ef38d5c94ceaaebd92db8d700490
+run_name: zealous-newt-416
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751893512526
+status: 3
+tags: []
+user_id: user

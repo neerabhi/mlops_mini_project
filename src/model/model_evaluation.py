@@ -12,8 +12,10 @@ import dagshub
 import os
 
 # Set up DagsHub credentials for MLflow tracking
-mlflow.set_tracking_uri('https://dagshub.com/neerabhi/mlops_mini_project.mlflow')
-dagshub.init(repo_owner='neerabhi', repo_name='mlops_mini_project', mlflow=True)
+mlflow.set_tracking_uri("file:./mlruns")  # local directory
+
+# mlflow.set_tracking_uri('https://dagshub.com/neerabhi/mlops_mini_project.mlflow')
+# dagshub.init(repo_owner='neerabhi', repo_name='mlops_mini_project', mlflow=True)
 
 # logging configuration
 logger = logging.getLogger('model_evaluation')
@@ -137,7 +139,9 @@ def main():
             mlflow.log_artifact('reports/metrics.json')
 
             # Log the model info file to MLflow
-            mlflow.log_artifact('reports/model_info.json')
+            # Log the correct model info file to MLflow
+            mlflow.log_artifact('reports/experiment_info.json')
+
 
             # # Log the evaluation errors log file to MLflow
             mlflow.log_artifact('model_evaluation_errors.log')
