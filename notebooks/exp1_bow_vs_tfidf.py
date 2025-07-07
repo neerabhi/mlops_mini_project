@@ -76,7 +76,7 @@ df = df[df['sentiment'].isin(['happiness','sadness'])]
 df['sentiment'] = df['sentiment'].replace({'sadness': 0, 'happiness': 1})
 
 # Set the experiment
-mlflow.set_experiment("BoW vs TF-IDF")
+mlflow.set_experiment("BoW vs TF-IDF again")
 
 # Define vectorizers and algorithms
 vectorizers = {
